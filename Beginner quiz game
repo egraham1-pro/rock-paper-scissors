@@ -1,0 +1,40 @@
+print("welcome to my computer quiz")
+
+playing = input("Do you want to play? ")
+
+if playing.lower() != "yes":
+  quit()
+
+print("Okay, lets play")
+score = 0
+
+answer = input("What is the capital of Washington? ")
+if answer.lower() == "olympia":
+  print("correct")
+  score += 5
+else: 
+  print("incorrect")
+
+answer = input("How many stars are on the US flag? ").lower()
+if answer.lower() == "50":
+  print("correct")
+  score += 5
+else: 
+  print("incorrect")
+
+answer = input("What year did the Civil War end? ").lower()
+if answer.lower() == "1865":
+  print("correct")
+  score += 5
+else: 
+  print("incorrect")
+
+answer = input("How many bones are in the human body? ").lower()
+if answer.lower() == "206":
+  print("correct")
+  score += 5
+else: 
+  print("incorrect")
+
+print("you got " + str(score) + " questions correct!")
+print("you got " + str((score / 4) * 20) + "%.")
